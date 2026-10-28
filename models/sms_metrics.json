@@ -1,0 +1,146 @@
+{
+  "mode": "sms",
+  "trained_at": "2026-10-28T18:27:09+00:00",
+  "model": {
+    "type": "MultinomialNB",
+    "alpha": 1.0
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "stop_words": "english"
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_size": 4136,
+    "test_size_rows": 1035
+  },
+  "dataset": {
+    "mode": "sms",
+    "dataset_name": "SMS Spam Collection",
+    "file": "spam.csv",
+    "encoding": "utf-8",
+    "columns_loaded": [
+      "v1",
+      "v2",
+      "Unnamed: 2",
+      "Unnamed: 3",
+      "Unnamed: 4"
+    ],
+    "detected_columns": {
+      "text_column": "v2",
+      "label_column": "v1",
+      "subject_column": null
+    },
+    "rows_loaded": 5574,
+    "rows_after_cleaning": 5171,
+    "nulls_removed": 0,
+    "duplicates_removed": 403,
+    "ham_count": 4518,
+    "spam_count": 653,
+    "spam_ratio": 0.1263,
+    "average_text_length": 79.33,
+    "unique_texts": 5171,
+    "train_size": 4136,
+    "test_size": 1035,
+    "train_spam": 522,
+    "test_spam": 131
+  },
+  "top_spam_words": [
+    {
+      "word": "claim",
+      "weight": 3.2156
+    },
+    {
+      "word": "prize",
+      "weight": 3.1859
+    },
+    {
+      "word": "won",
+      "weight": 2.9663
+    },
+    {
+      "word": "nokia",
+      "weight": 2.7469
+    },
+    {
+      "word": "guaranteed",
+      "weight": 2.5827
+    },
+    {
+      "word": "500",
+      "weight": 2.5612
+    },
+    {
+      "word": "1000",
+      "weight": 2.559
+    },
+    {
+      "word": "18",
+      "weight": 2.5541
+    },
+    {
+      "word": "urgent",
+      "weight": 2.4545
+    },
+    {
+      "word": "tone",
+      "weight": 2.4349
+    },
+    {
+      "word": "awarded",
+      "weight": 2.3884
+    },
+    {
+      "word": "150",
+      "weight": 2.3401
+    },
+    {
+      "word": "16",
+      "weight": 2.3179
+    },
+    {
+      "word": "attempt",
+      "weight": 2.312
+    },
+    {
+      "word": "150ppm",
+      "weight": 2.3068
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.9614,
+    "precision": 0.9625,
+    "recall": 0.9614,
+    "f1": 0.9585,
+    "average": "weighted"
+  },
+  "spam_metrics": {
+    "precision": 0.9892,
+    "recall": 0.7023,
+    "f1": 0.8214,
+    "support": 131
+  },
+  "per_class": {
+    "ham": {
+      "precision": 0.9586,
+      "recall": 0.9989,
+      "f1": 0.9783,
+      "support": 904
+    },
+    "spam": {
+      "precision": 0.9892,
+      "recall": 0.7023,
+      "f1": 0.8214,
+      "support": 131
+    }
+  },
+  "confusion_matrix": {
+    "tn": 903,
+    "fp": 1,
+    "fn": 39,
+    "tp": 92
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n         ham     0.9586    0.9989    0.9783       904\n        spam     0.9892    0.7023    0.8214       131\n\n    accuracy                         0.9614      1035\n   macro avg     0.9739    0.8506    0.8999      1035\nweighted avg     0.9625    0.9614    0.9585      1035\n",
+  "note": "Metrics are computed on the 20% held-out test set."
+}
