@@ -31,6 +31,7 @@ export default function DatasetChart({ dataset }) {
             outerRadius="80%"
             paddingAngle={2}
             stroke="none"
+            isAnimationActive={false}
           >
             {data.map((entry) => (
               <Cell key={entry.name} fill={entry.color} />

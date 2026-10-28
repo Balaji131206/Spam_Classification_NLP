@@ -21,9 +21,16 @@ report, so the two domains never share vocabulary or statistics.
 
 ## Screenshots
 
-| Classify | Performance |
-| --- | --- |
-| _Add screenshot: `docs/screenshots/classify.png`_ | _Add screenshot: `docs/screenshots/performance.png`_ |
+**Classify page**
+
+![Classify page](docs/screenshots/classify.png)
+
+**Performance dashboard**
+
+![Performance dashboard](docs/screenshots/performance.png)
+
+A full assignment report with methodology, results and figures is available in
+[`docs/REPORT.md`](docs/REPORT.md).
 
 ## Tech stack
 
