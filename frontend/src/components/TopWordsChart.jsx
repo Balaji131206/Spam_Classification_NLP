@@ -40,7 +40,7 @@ export default function TopWordsChart({ words = [] }) {
           formatter={(value) => [Number(value).toFixed(3), 'spam − ham log-prob']}
           contentStyle={TOOLTIP_STYLE}
         />
-        <Bar dataKey="weight" fill="#6366f1" radius={[0, 6, 6, 0]} maxBarSize={20} />
+        <Bar dataKey="weight" fill="#6366f1" radius={[0, 6, 6, 0]} maxBarSize={20} isAnimationActive={false} />
       </BarChart>
     </ResponsiveContainer>
   );

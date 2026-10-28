@@ -42,8 +42,8 @@ export default function MetricsChart({ perClass }) {
         />
         <Tooltip formatter={(value) => `${(Number(value) * 100).toFixed(2)}%`} contentStyle={TOOLTIP_STYLE} />
         <Legend wrapperStyle={{ fontSize: 12, paddingTop: 8 }} />
-        <Bar dataKey="Ham" fill="#10b981" radius={[6, 6, 0, 0]} maxBarSize={44} />
-        <Bar dataKey="Spam" fill="#ef4444" radius={[6, 6, 0, 0]} maxBarSize={44} />
+        <Bar dataKey="Ham" fill="#10b981" radius={[6, 6, 0, 0]} maxBarSize={44} isAnimationActive={false} />
+        <Bar dataKey="Spam" fill="#ef4444" radius={[6, 6, 0, 0]} maxBarSize={44} isAnimationActive={false} />
       </BarChart>
     </ResponsiveContainer>
   );

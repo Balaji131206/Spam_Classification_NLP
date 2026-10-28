@@ -6,7 +6,7 @@ export default function Footer() {
           Balaji N | SRN: R24EI009 | IOT-A | Semester V | REVA University
         </p>
         <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-          Build with FastAPI, React and scikit-learn &middot; all metrics are measured on the held-out test set.
+          Built with FastAPI, React and scikit-learn &middot; all metrics are measured on the held-out test set.
         </p>
       </div>
     </footer>
