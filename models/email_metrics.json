@@ -1,0 +1,143 @@
+{
+  "mode": "email",
+  "trained_at": "2026-10-28T18:27:12+00:00",
+  "model": {
+    "type": "MultinomialNB",
+    "alpha": 1.0
+  },
+  "vectorizer": {
+    "type": "TfidfVectorizer",
+    "stop_words": "english"
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_size": 4556,
+    "test_size_rows": 1139
+  },
+  "dataset": {
+    "mode": "email",
+    "dataset_name": "Email Spam Dataset",
+    "file": "email.csv",
+    "encoding": "utf-8",
+    "columns_loaded": [
+      "text",
+      "spam"
+    ],
+    "detected_columns": {
+      "text_column": "text",
+      "label_column": "spam",
+      "subject_column": null
+    },
+    "rows_loaded": 5728,
+    "rows_after_cleaning": 5695,
+    "nulls_removed": 0,
+    "duplicates_removed": 33,
+    "ham_count": 4327,
+    "spam_count": 1368,
+    "spam_ratio": 0.2402,
+    "average_text_length": 1558.07,
+    "unique_texts": 5695,
+    "train_size": 4556,
+    "test_size": 1139,
+    "train_spam": 1094,
+    "test_spam": 274
+  },
+  "top_spam_words": [
+    {
+      "word": "viagra",
+      "weight": 3.2474
+    },
+    {
+      "word": "stationery",
+      "weight": 2.8766
+    },
+    {
+      "word": "logo",
+      "weight": 2.8329
+    },
+    {
+      "word": "2005",
+      "weight": 2.8037
+    },
+    {
+      "word": "adobe",
+      "weight": 2.6254
+    },
+    {
+      "word": "jul",
+      "weight": 2.5909
+    },
+    {
+      "word": "oem",
+      "weight": 2.5694
+    },
+    {
+      "word": "engines",
+      "weight": 2.562
+    },
+    {
+      "word": "identity",
+      "weight": 2.5162
+    },
+    {
+      "word": "oniine",
+      "weight": 2.5084
+    },
+    {
+      "word": "sex",
+      "weight": 2.4862
+    },
+    {
+      "word": "andmanyother",
+      "weight": 2.3941
+    },
+    {
+      "word": "cialls",
+      "weight": 2.3684
+    },
+    {
+      "word": "projecthoneypot",
+      "weight": 2.3347
+    },
+    {
+      "word": "2004",
+      "weight": 2.3225
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.9043,
+    "precision": 0.915,
+    "recall": 0.9043,
+    "f1": 0.8953,
+    "average": "weighted"
+  },
+  "spam_metrics": {
+    "precision": 1.0,
+    "recall": 0.6022,
+    "f1": 0.7517,
+    "support": 274
+  },
+  "per_class": {
+    "ham": {
+      "precision": 0.8881,
+      "recall": 1.0,
+      "f1": 0.9407,
+      "support": 865
+    },
+    "spam": {
+      "precision": 1.0,
+      "recall": 0.6022,
+      "f1": 0.7517,
+      "support": 274
+    }
+  },
+  "confusion_matrix": {
+    "tn": 865,
+    "fp": 0,
+    "fn": 109,
+    "tp": 165
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n         ham     0.8881    1.0000    0.9407       865\n        spam     1.0000    0.6022    0.7517       274\n\n    accuracy                         0.9043      1139\n   macro avg     0.9440    0.8011    0.8462      1139\nweighted avg     0.9150    0.9043    0.8953      1139\n",
+  "note": "Metrics are computed on the 20% held-out test set."
+}
